@@ -49,7 +49,7 @@
     while (true) {}
   }
 
-  //object 🙅🏻‍♀️X(최대한 쓰지마욧!)
+  //object 🙅🏻‍♀️X(최대한 쓰지마욧!) => 쓸거면 어떤 type의 object인지 정확하게 명시!
   let obj: object;
   function acceptSomeObject(obj: object) {}
 
