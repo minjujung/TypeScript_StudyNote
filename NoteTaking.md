@@ -39,8 +39,38 @@
 
 #### abstraction
 
-: class 내부에 뭐가 많을 때 어떤식으로 사용하면 좋을 지 안내, 도와주는 역할, 쉽게 파악할 수 있도록
+- class 내부에 뭐가 많을 때 어떤식으로 사용하면 좋을 지 안내, 도와주는 역할, 쉽게 파악할 수 있도록
 
-1. private같은 제어자로 애초에 class 외부에서 사용할 수있는 함수를 제한해주는 것 자체가 abstraction
+- private같은 제어자로 애초에 class 외부에서 사용할 수있는 함수를 제한해주는 것 자체가 abstraction
 
 이라고도 할 수 있음! 보여주는 것만 사용해라 이런 느낌!
+
+#### inheritance
+
+- 부모를 상속하면 자식 클래스에서는 부모의 기능들을 그대로 쓸 수 있으면서 자기만의 특정 기능도
+
+  추가 가능!!
+
+- 자식 클래스에서 부모 클래스에 있는 method를 재정의 (덮어쓰기) 할 수 있음! 이때 사용하는 게 `super`
+
+- 하지만 typescript에서는 **`두가지 이상의 class를 상속 받을 수 없음!! 하나씩만 가능`**
+
+  => 따라서 너무 수직적인 관계가 될 수 있음!!
+
+#### composition ✨
+
+- 원하는 기능을 class로 구현해서 사용하기, 그러면 상속하지 않고 class 내부에서 class를 호출해서
+
+사용하면 된다!!
+
+- class 내부에서 사용하는 class를 `constructor에서 선언해줄 때, interface로 선언`해주고 그 interface를
+
+implements하는 class를 변수로 넣어주면 더 다양한 객체 생성 가능!!
+
+#### abstract
+
+- abstract의 class의 경우 직접적으로 instance를 생성 할 수 없다.
+
+- abstract class 내부의 abstract method는 구현사항을 전혀 정의 하지 않고 `abstract class를 상속한`
+
+`class 에서는 반드시 정의 해야하는 method가 된다!` 따라서 super 키워드는 사용X
