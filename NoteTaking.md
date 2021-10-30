@@ -74,3 +74,5 @@ implements하는 class를 변수로 넣어주면 더 다양한 객체 생성 가
 - abstract class 내부의 abstract method는 구현사항을 전혀 정의 하지 않고 `abstract class를 상속한`
 
 `class 에서는 반드시 정의 해야하는 method가 된다!` 따라서 super 키워드는 사용X
+
+### Generic을 이용해서 클래스나 함수가 사용 될때 type을 정할 수 있다! 훨씬 유동적!
